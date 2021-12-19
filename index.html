@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Igor Besedin</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Calculator</div>
+        <form action="#">
+            <div class="form-details">
+                <div class="input-box">
+                    <label for="first-number">First Number</label>
+                    <input type="text" placeholder="Enter your first number" id='first-number' required>
+                </div>
+
+                <div class="input-box">
+                    <label for="second-number">Second Number</label>
+                    <input type="text" placeholder="Enter your second number" id='second-number' required>
+                </div>
+            </div>
+            <div class="form-selector">
+                <select name="operation" id="select-operation" >
+                    <option disabled selected>Choose operation</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+            <div class="calc-button">
+                <input type="button" value="Calculate" onclick="calculate()">
+            </div>
+            
+        </form>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
